@@ -601,6 +601,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
+      PublicAccessBlockConfiguration:
+        RestrictPublicBuckets: True
 
   ### TODO - Custom Upload of insecure document
 
