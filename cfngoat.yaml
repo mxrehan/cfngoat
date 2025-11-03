@@ -603,6 +603,7 @@ Resources:
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
       PublicAccessBlockConfiguration:
         RestrictPublicBuckets: True
+        IgnorePublicAcls: True
 
   ### TODO - Custom Upload of insecure document
 
